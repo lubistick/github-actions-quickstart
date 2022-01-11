@@ -16,6 +16,7 @@ jobs:
         
   download_a_single_artifact:
     runs-on: ubuntu-latest
+    needs: save_output
     steps:
       - name: Download a single artifact
         uses: actions/download-artifact@v2
